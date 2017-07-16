@@ -4,8 +4,9 @@ import Title from "./Header/Title";
 
 export default class Header extends React.Component {
     render() {
+        console.log(this.props);
         return (
-            <Title />
+            <Title title={this.props.title} />
             // even tho header returning the title,
             // no extra dom elements added
             // unless you wanna wrap a div over it
